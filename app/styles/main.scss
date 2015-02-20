@@ -1,0 +1,166 @@
+// bower:scss
+// endbower
+
+$border: black;
+$font-color: black;
+$button-color: #59E1B1;
+$background: white;
+
+body {
+  background: #E9E9E9;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid $border;
+  border-radius: 3px;
+  background: $button-color;
+  cursor: pointer;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+header {
+  font-size: 30px;
+  padding: 20px;
+  background: $background;
+
+  button {
+    float: right;
+    margin: 3px;
+    margin-top: 0px;
+  }
+}
+
+.genre-nav {
+  padding: 20px;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+  background: $background;
+
+  ul {
+    width: 80%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 3px;
+    }
+  }
+
+  button {
+    float: right;
+    margin: 3px;
+    margin-top: 0px;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+
+  .story-container {
+    width: 100%;
+    column-count: 2;
+
+    .story {
+      display: inline-block;
+      border: 1px solid $border;
+      border-radius: 3px;
+      padding: 5px;
+      margin: 15px;
+      transition: all 0.5s ease;
+      background: $background;
+
+      &:hover {
+        border: 1px solid $button-color;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .user-container {
+    width: 100%;
+
+    .user {
+      width: 100%;
+
+      .user-info {
+        width: 30%;
+        display: inline-block;
+
+        img {
+          width: 100%;
+          margin-top: 50px;
+        }
+
+        p {
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+
+        h1 {
+          margin: 0;
+        }
+      }
+
+      .user-contributes {
+        width: 60%;
+        float: right;
+
+        h1 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  .create-container {
+    width: 100%;
+
+    .create {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      text-align: center;
+      background: $background;
+      border-radius: 3px;
+      border: 1px solid $border;
+
+      ul {
+        width: 50%;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+          width: 30%;
+          display: inline-block;
+          list-style: none;
+        }
+      }
+
+      textarea {
+        width: 80%;
+        height: 500px;
+        padding: 5px;
+        font-size: 15px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+
